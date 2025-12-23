@@ -2,21 +2,20 @@
 # Novus Defense Systems - Internal Deployment Script
 # Contact: infrastructure@novusdefense.io
 # CLASSIFICATION: INTERNAL USE ONLY
-# WARNING: Contains production credentials - do not commit!
 
 # Production Jump Box
-PROD_SERVER="167.71.108.255"
-PROD_USER="svc_deploy"
-PROD_PASS="N0vus_Pr0d_2024!$"
+PROD_SERVER="$NDS_PROD_SERVER"
+PROD_USER="$NDS_PROD_USER"
+PROD_PASS="$NDS_PROD_PASS"
 
 # Internal Database (ITAR controlled)
-DB_HOST="db-prod.novusdefense.local"
-DB_USER="app_svc"
-DB_PASS="D3f3ns3_Syst3ms_DB!"
+DB_HOST="$NDS_DB_HOST"
+DB_USER="$NDS_DB_USER"
+DB_PASS="$NDS_DB_PASS"
 
 # AWS GovCloud Keys
-export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7GOVCLOUD"
-export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYzKsGOV"
+export AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY"
 export AWS_DEFAULT_REGION="us-gov-west-1"
 
 # Deploy to production
